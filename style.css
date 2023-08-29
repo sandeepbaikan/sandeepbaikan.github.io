@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #d4a373;
+    color: #fefae0;
+}
+.header ul  {
+    display: flex;
+    padding: 0 50px;
+}
+.header ul li {
+    list-style: none;
+    margin-right: 16px;
+    padding: 16px 0;
+}
+
+main {
+    height: calc(100vh - 100px);
+}
+h2 {
+    padding: 5% 3%;
+}
+a {
+    cursor: pointer;
+    color: #fefae0;
+    text-decoration: none;
+}
+
+footer {
+    padding: 16px 50px;
+    background-color: #faedcd;
+}
