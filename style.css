@@ -43,6 +43,8 @@ body {
   -webkit-text-fill-color: transparent;
   font-size: 40px;
   white-space: nowrap;
+  position: relative;
+  top: 6px;
 }
 .header ul {
   display: flex;
@@ -61,6 +63,7 @@ body {
 .header ul li.social a {
   margin-left: 20px;
   display: inline-block;
+  height: 30px;
 }
 
 main {
