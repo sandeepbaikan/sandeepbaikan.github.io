@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Sandeep Baikan</title>
+    <script>
+      if (window)
+        function toggleTheme() {
+          var element = document.body;
+          let hi = document.getElementById("hi");
+          element.classList.toggle("dark-mode");
+          hi.classList.toggle("dark-mode-hi");
+        }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -36,9 +45,17 @@
       </div>
     </header>
     <main>
+      <div class="mode-switch">
+        <img
+          onclick="toggleTheme()"
+          title="Toggle to Batman Mode"
+          src="./assets/images/batman.png"
+          alt="night-mode"
+        />
+      </div>
       <section class="landing container">
         <div class="bio">
-          <p>
+          <p id="hi">
             Hi 👋, <br />
             My name is <br /><span>Sandeep Baikan</span> <br />I build things
             for web

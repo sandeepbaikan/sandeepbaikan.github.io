@@ -13,6 +13,13 @@
 
 body {
   font-family: poppins;
+  background-color: #fff;
+  color: #666;
+}
+
+body.dark-mode {
+  background-color: #191919;
+  color: #a7a7a7;
 }
 
 .container {
@@ -36,7 +43,6 @@ body {
   padding: 20px 0;
   position: fixed;
   top: 0;
-  background: #fff;
   z-index: 1;
   left: 0;
   right: 0;
@@ -75,10 +81,17 @@ main {
   min-height: calc(100vh - 169px);
   margin-top: 107px;
 }
+.mode-switch img {
+  width: 50px;
+  position: fixed;
+  top: 45%;
+  right: 20px;
+  cursor: pointer;
+}
 
 a {
   cursor: pointer;
-  color: #666;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -96,6 +109,9 @@ a {
   line-height: 70px;
   letter-spacing: -1px;
   color: #42446e;
+}
+.landing .bio p.dark-mode-hi {
+  color: #d8d8d8;
 }
 
 span {
@@ -122,7 +138,6 @@ span {
 
 footer {
   padding: 16px 50px;
-  background-color: #faedcd;
 }
 
 @media screen and (max-width: 820px) {
@@ -149,7 +164,7 @@ footer {
     width: 30vh;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: #fff;
-    z-index: 2;
+    z-index: 4;
   }
   .header .logo {
     font-size: 30px;
@@ -184,5 +199,13 @@ footer {
   .profile-pic img {
     width: 280px;
     height: 280px;
+  }
+  .mode-switch img {
+    width: 50px;
+    position: fixed;
+    top: 12px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 3;
   }
 }
