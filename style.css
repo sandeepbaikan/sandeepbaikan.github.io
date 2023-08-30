@@ -134,6 +134,7 @@ footer {
 @media screen and (max-width: 767px) {
   .header {
     padding: 16px;
+
   }
   .header ul {
     display: none;
@@ -144,9 +145,12 @@ footer {
     width: 30vh;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: #fff;
+    z-index: 2;
   }
   .header .logo {
     font-size: 30px;
+    height: 50px;
+    overflow: visible;
   }
   .mobile-menu {
     display: block;
