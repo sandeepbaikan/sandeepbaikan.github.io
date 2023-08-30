@@ -124,6 +124,7 @@ footer {
         flex-direction: column;
         height: auto;
         transform: translateY(0);
+        margin: 40px 0;
     }
     .landing .bio {
         margin-bottom: 60px;
@@ -166,7 +167,11 @@ footer {
     min-height: calc(100vh - 142px);
   }
   .landing .bio p {
-    font-size: 38px;
+    font-size: 30px;
     line-height: 50px;
+  }
+  .profile-pic img {
+    width: 280px;
+    height: 280px;
   }
 }
