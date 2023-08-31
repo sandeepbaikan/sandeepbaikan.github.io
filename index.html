@@ -6,18 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Sandeep Baikan</title>
-    <script>
-      if (window)
-        function toggleTheme() {
-          var element = document.body;
-          let hi = document.getElementById("hi");
-          element.classList.toggle("dark-mode");
-          hi.classList.toggle("dark-mode-hi");
-        }
-    </script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="head">
       <div class="container flexbox space-between align-center">
         <a class="logo" href="/"> {&#60; SB /&#62;}</a>
         <nav>
@@ -66,6 +57,41 @@
         </div>
       </section>
     </main>
-    <footer>&copy Sandeep Baikan</footer>
+    <footer class="footer container">
+      <div class="footer-row flexbox space-between align-center">
+        <div class="footer-logo">{&#60; SB /&#62;}</div>
+        <div class="footer-phone">
+          <a href="tel:+919175844290">+91-9175844290</a>
+        </div>
+        <div class="footer-email">
+          <a href="mailto:sandeep.baikan@gmail.com">sandeep.baikan@gmail.com</a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/sandeepbaikan" target="_blank"
+            ><img src="./assets/images/github.svg" alt="github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/sandeep-baikan-901656b4/"
+            target="_blank"
+            ><img src="./assets/images/linkedin.svg" alt="github"
+          /></a>
+        </div>
+      </div>
+      <p class="footer-note">
+        &copy Designed and built by <span>Sandeep Baikan</span> with Love &
+        Coffee
+      </p>
+    </footer>
   </body>
+  <script>
+    if (window)
+      function toggleTheme() {
+        var element = document.body;
+        let hi = document.getElementById("hi");
+        let head = document.getElementById("head");
+        element.classList.toggle("dark-mode");
+        hi.classList.toggle("dark-mode-hi");
+        head.classList.toggle("dark");
+      }
+  </script>
 </html>
